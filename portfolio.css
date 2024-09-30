@@ -16,6 +16,48 @@
     to { opacity: 0; }
 }
 
+.show{
+    opacity: 1 !important;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 0.05s;
+    animation-name: placement;
+    animation-duration: 1s;
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+.gradient-background{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #0769ca;
+}
+
+.circle1{
+    top: 100px;
+    right: 100px;
+}
+
+.circle2{
+    top: 500px;
+    left: 100px;
+}
+
+.circle3{
+    top: -100px;
+    left: 300px;
+}
+
+.circle4{
+    top: 700px;
+    right: 300px;
+}
+
+.circle5{
+    top: 1100px;
+    left: 300px;
+}
+
 body {
     min-height: 100vh;
     background-size: cover;
@@ -53,7 +95,7 @@ header {
 }
 
 header.scrolled {
-    box-shadow: 0px -20px 30px 0px #151515;
+    box-shadow: 0px -20px 30px 0px #0769ca;
     background-color: #0F172A;
 }
 
@@ -141,14 +183,6 @@ header.scrolled {
     width: 400px;
 }
 
-.home-profile-text a.show{
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-    transition-delay: 0.05s;
-    animation-name: placement;
-    animation-duration: 1s;
-}
-
 .home-profile-text-greets{
     font-size: 20px;
     font-weight: 450;
@@ -212,14 +246,6 @@ header.scrolled {
     border-radius: 50px;
 }
 
-.home-profile-picture.show{
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-    transition-delay: 0.05s;
-    animation-name: placement;
-    animation-duration: 1s;
-}
-
 .home-aboutme{
     height: 598px;
     width: 100%;
@@ -238,14 +264,6 @@ header.scrolled {
     border-radius: 50px;
 }
 
-.home-aboutme-picture.show{
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-    transition-delay: 0.05s;
-    animation-name: placement;
-    animation-duration: 1s;
-}
-
 .home-aboutme-text{
     display: flex;
     align-items: start;
@@ -259,14 +277,6 @@ header.scrolled {
     align-items: center;
     justify-content: left;
     width: 300px;
-}
-
-.home-aboutme-text a.show{
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-    transition-delay: 0.05s;
-    animation-name: placement;
-    animation-duration: 1s;
 }
 
 .home-aboutme-text-title{
@@ -290,19 +300,11 @@ header.scrolled {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid #848484;
+    border: 1px solid #fafafa;
     border-radius: 10px;
     width: 130px;
     height: 120px;
     margin: 20px 0;
-}
-
-.experience-block.show{
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-    transition-delay: 0.05s;
-    animation-name: placement;
-    animation-duration: 1s;
 }
 
 .experience-block a{
@@ -336,36 +338,119 @@ header.scrolled {
     font-weight: 350;
 }
 
-.gradient-background{
-    position: absolute;
-    box-shadow: 0 0 1000px 50px #0769ca;
+.home-skills{
+    height: 598px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0F172A;
 }
 
-.circle1{
-    top: 100px;
-    right: 100px;
+.home-skills-title{
+    opacity: 0;
+    font-size: 50px;
+    font-weight: 450;
+    background: linear-gradient(to right, #2f9acf, #0ccfd3);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
-.circle2{
-    top: 500px;
-    left: 100px;
+.home-skills-subtitle{
+    opacity: 0;
+    color: #fafafa;
+    margin-bottom: 50px;
 }
 
-.circle3{
-    top: -100px;
-    left: 300px;
+.home-skills-content-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.circle4{
-    top: 700px;
-    right: 300px;
+.home-skills-content{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
-.circle5{
-    top: 1100px;
-    left: 300px;
+.home-skills-content .skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #7F92B0;
+    border-radius: 20px;
+    gap: 10px;
+    color: #fafafa;
+    font-size: 15px;
+    font-weight: 400;
 }
 
-.fade-out {
-    animation: fadeOut 1s forwards;
+.skills img{
+    width: 55px;
+    height: auto;
+}
+
+.skills .level{
+    width: 120px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid #313131;
+}
+
+.skills .html {
+    width: 120px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid #313131;
+    background: linear-gradient(to right, #2f9acf 0%, #0ccfd3 80%, transparent 80%);
+}
+
+.skills .css {
+    width: 120px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid #313131;
+    background: linear-gradient(to right, #2f9acf 0%, #0ccfd3 80%, transparent 80%);
+}
+
+.skills .js {
+    width: 120px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid #313131;
+    background: linear-gradient(to right, #2f9acf 0%, #0ccfd3 30%, transparent 30%);
+}
+
+.skills .word {
+    width: 120px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid #313131;
+    background: linear-gradient(to right, #2f9acf 0%, #0ccfd3 80%, transparent 80%);
+}
+
+.skills .excel {
+    width: 120px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid #313131;
+    background: linear-gradient(to right, #2f9acf 0%, #0ccfd3 70%, transparent 70%);
+}
+
+.skills .canva {
+    width: 120px;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid #313131;
+    background: linear-gradient(to right, #2f9acf 0%, #0ccfd3 80%, transparent 80%);
 }
