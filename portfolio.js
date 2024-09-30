@@ -98,3 +98,10 @@ const sectionMap = {
     'skills': '.home-skills',
     'project': '.home-portfolio',
 };
+
+const pageDirector = document.querySelector('.page-director'); // Ensure this is defined
+
+pageDirector.addEventListener('click', () => {
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
