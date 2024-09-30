@@ -80,34 +80,21 @@ function startAnimation() {
 
 window.onload = startAnimation;
 
-// Add smooth scrolling for navigation links
-document.querySelectorAll('nav.action-button a').forEach(link => {
+document.querySelectorAll('nav.action-button a, .footer-action-button a').forEach(link => {
     link.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default anchor click behavior
-        const targetId = this.textContent.toLowerCase(); // Get the target section id
-        const targetSection = document.querySelector(`.${targetId}`); // Select the target section
+        event.preventDefault();
+        const targetId = this.textContent.toLowerCase();
+        const targetSection = document.querySelector(sectionMap[targetId]);
         if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Scroll to the section
+            targetSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
     });
 });
 
-// Update target section IDs
-// Change this line to map the links to the correct sections
 const sectionMap = {
     'home': '.home-profile',
     'about': '.home-aboutme',
+    'portfolio': '.home-portfolio',
     'skills': '.home-skills',
+    'project': '.home-portfolio',
 };
-
-// Update the event listener to use the sectionMap
-document.querySelectorAll('nav.action-button a').forEach(link => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default anchor click behavior
-        const targetId = this.textContent.toLowerCase(); // Get the target section id
-        const targetSection = document.querySelector(sectionMap[targetId]); // Select the target section
-        if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Scroll to the section
-        }
-    });
-});

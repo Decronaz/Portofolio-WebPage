@@ -157,7 +157,7 @@ header.scrolled {
 }
 
 .action-button a:hover{
-    color: #0ccfd3;
+    color: #0a9db7;
 }
 
 .contacts-button{
@@ -199,7 +199,7 @@ header.scrolled {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 30px;
+    gap: 80px;
     background-color: #0F172A;
 }
 
@@ -251,18 +251,19 @@ header.scrolled {
 .home-profile-button-greetings{
     background: linear-gradient(to right, #2f9acf, #0ccfd3);
     color: #fafafa;
-    width: 160px !important;
+    width: 180px !important;
     height: 50px;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     font-size: 18px;
     border-radius: 10px;
-    gap: 5px;
+    gap: 10px;
     cursor: pointer;
 }
 
-.hello-emoji{
+.fa-download{
+    color: #fafafa;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -274,11 +275,20 @@ header.scrolled {
 }
 
 .home-profile-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     height: 250px;
     width: 250px;
-    border: 1px solid #313131;
     border-radius: 50px;
+    border: 1px solid #fafafa;
+}
+
+.profile-image{
+    height: 250px;
+    border-radius: 50px;
+    transform: rotate(10deg);
 }
 
 .home-aboutme{
@@ -295,8 +305,16 @@ header.scrolled {
     opacity: 0;
     height: 400px;
     width: 300px;
-    border: 1px solid #313131;
+    border: 1px solid #fafafa;
     border-radius: 50px;
+    transform: rotate(10deg);
+}
+
+.about-me-image{
+    height: 400px;
+    width: 300px;
+    border-radius: 50px;
+    transform: rotate(-10deg);
 }
 
 .home-aboutme-text{
@@ -704,6 +722,11 @@ footer{
 
 .footer-action-button a{
     cursor: pointer;
+    transition: all 0.1s;
+}
+
+.footer-action-button a:hover{
+    color: #0a9db7;
 }
 
 .footer-socials{
