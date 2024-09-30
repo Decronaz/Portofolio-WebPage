@@ -17,7 +17,7 @@ const intersectionCallback = (entries) => {
   
   const observer = new IntersectionObserver(intersectionCallback);
   
-  const items = document.querySelectorAll('.home-profile-text a, .home-profile-picture, .home-aboutme-text a, .home-aboutme-picture, .experience-block, .home-skills-title, .home-skills-subtitle, .home-skills-content');
+  const items = document.querySelectorAll('.fontopia-description, .fontopia-title, .fontopia-achievement, .fontopia-logo-block, .portofolio-achievement, .portfolio-subtitle, .portfolio-title, .education-profile-date, .education-profile-subtitle, .education-profile-title, .education-progress-line, .home-profile-text a, .home-profile-picture, .home-aboutme-text a, .home-aboutme-picture, .experience-block, .home-skills-title, .home-skills-subtitle, .home-skills-content, .home-education-title, .fa-graduation-cap');
   for (const item of items) {
     observer.observe(item);
   }

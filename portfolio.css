@@ -58,6 +58,41 @@
     left: 300px;
 }
 
+.circle6{
+    top: 1250px;
+    right: 0px;
+}
+
+.circle7{
+    top: 1700px;
+    left: 100px;
+}
+
+.circle8{
+    top: 1850px;
+    right: 350px;
+}
+
+.circle9{
+    top: 2200px;
+    left: 400px;
+}
+
+.circle10{
+    top: 2400px;
+    right: 50px;
+}
+
+.circle11{
+    top: 2700px;
+    left: 150px;
+}
+
+.circle12{
+    top: 2950px;
+    right: 300px;
+}
+
 body {
     min-height: 100vh;
     background-size: cover;
@@ -289,8 +324,7 @@ header.scrolled {
 }
 
 .home-aboutme-text-subtitle{
-    font-size: 20px;
-    font-weight: 300;
+    opacity: 0;
     color: #fafafa;
 }
 
@@ -453,4 +487,238 @@ header.scrolled {
     border-radius: 10px;
     border: 1px solid #313131;
     background: linear-gradient(to right, #2f9acf 0%, #0ccfd3 80%, transparent 80%);
+}
+
+.home-education{
+    height: 598px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0F172A;
+}
+
+.fa-graduation-cap{
+    opacity: 0;
+    font-size: 50px;
+    background: linear-gradient(to right, #2f9acf, #0ccfd3);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.home-education-title{
+    opacity: 0;
+    font-size: 50px;
+    font-weight: 450;
+    background: linear-gradient(to right, #2f9acf, #0ccfd3);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.education-progress-line{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.progress-line{
+    content: "";
+    height: 1px;
+    width: 330px;
+    background-color: #7F92B0;
+}
+
+.progress-line-short{
+    content: "";
+    height: 1px;
+    width: 50px;
+    background-color: #7F92B0;
+}
+
+.progress-circle{
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #7F92B0;
+    border-radius: 100px;
+}
+
+.education-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.education-profile div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+}
+
+.education-profile-title{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fafafa;
+}
+
+.education-profile-subtitle{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #2f9acf, #0ccfd3);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 450;
+}
+
+.education-profile-date{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    gap: 5px;
+    font-weight: 300;
+}
+
+.home-portfolio{
+    height: 598px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0F172A;
+}
+
+.portfolio-title{
+    opacity: 0;
+    font-size: 50px;
+    font-weight: 450;
+    background: linear-gradient(to right, #2f9acf, #0ccfd3);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.portfolio-subtitle{
+    opacity: 0;
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.portofolio-achievement{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    border: 1px solid #7F92B0;
+    border-radius: 50px;
+}
+
+.fontopia-logo-block{
+    opacity: 0;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to right, #2f9acf, #0ccfd3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.fontopia-logo{
+    width: 75px;
+    height: auto;
+}
+
+.fontopia-achievement{
+    opacity: 0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    width: 300px;
+    gap: 10px;
+}
+
+.fontopia-title{
+    opacity: 0;
+    color: #fafafa;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.fontopia-description{
+    opacity: 0;
+    font-size: 14px;
+}
+
+footer{
+    position: relative;
+    border-top: 1px solid #7F92B0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0F172A;
+    z-index: 100;
+}
+
+.footer-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer-action-button{
+    display: flex;
+    gap: 50px;
+    height: 75px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer-action-button a{
+    cursor: pointer;
+}
+
+.footer-socials{
+    display: flex;
+    gap: 50px;
+    height: 150px;
+}
+
+.footer-socials i{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.footer-copyright{
+    height: 50px;
+    color: #fafafa;
+    font-size: 14px;
 }
