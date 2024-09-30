@@ -11,6 +11,11 @@
     to {translate: 0px 0px 0px;}
 }
 
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
 body {
     min-height: 100vh;
     background-size: cover;
@@ -133,7 +138,7 @@ header.scrolled {
     display: flex;
     align-items: start;
     justify-content: left;
-    width: 300px;
+    width: 400px;
 }
 
 .home-profile-text a.show{
@@ -150,33 +155,17 @@ header.scrolled {
     color: #fafafa;
 }
 
-.home-profile-text-name{
+.home-profile-text-myself{
+    height: 60.67px;
+}
+
+.home-profile-text-roles{
     font-size: 50px;
     font-weight: 450;
     background: linear-gradient(to right, #2f9acf, #0ccfd3);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-}
-
-.home-profile-text-role{
-    font-size: 20px;
-    font-weight: 300;
-    padding: 5px 0 10px;
-    position: relative;
-    left: 70px;
-    color: #fafafa;
-}
-
-.home-profile-text-role::before {
-    content: '';
-    position: absolute;
-    left: -70px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 60px;
-    height: 1px;
-    background-color: #fafafa;
 }
 
 .home-profile-text-introduction{
@@ -187,7 +176,7 @@ header.scrolled {
 
 .home-profile-button-greetings-block{
     padding: 20px 0;
-    width: 300px;
+    width: 400px;
 }
 
 .home-profile-button-greetings{
@@ -375,4 +364,8 @@ header.scrolled {
 .circle5{
     top: 1100px;
     left: 300px;
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
 }
